@@ -1,0 +1,423 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>شركة رؤية لنقل العفش</title>
+<meta name="generator" content="WYSIWYG Web Builder 16 - http://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cairo:700,400,900&subset=arabic,latin-ext" rel="stylesheet">
+<link href="css/italeya.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="wb.conveyerbelt.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="util.min.js"></script>
+<script src="carousel.min.js"></script>
+<script src="wb.panel.min.js"></script>
+<script src="wwb16.min.js"></script>
+<script>   
+   $(document).ready(function()
+   {
+      $('#wb_service1').addClass('visibility-hidden');
+      $('#wb_service2').addClass('visibility-hidden');
+      $('#wb_service3').addClass('visibility-hidden');
+      $("#SlideShow1").conveyerbelt({speed:3, spacing: 5});
+      $("a[href*='#services']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_services').offset().top-80 }, 600, 'linear');
+      });
+      $("a[href*='#planTripLayoutGrid']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#planTripLayoutGrid').offset().top }, 600, 'easeInSine');
+      });
+      $("a[href*='#contactForm']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_contactForm').offset().top }, 600, 'easeInSine');
+      });
+      $("#attractionsCarousel").on('slid.bs.carousel', function(e)
+      {
+         var index = $(e.relatedTarget).index();
+         switch(index)
+         {
+            case 0:
+               $('#Carousel2').bootstrapcarousel(0);
+               break;
+         }
+      });
+      $("#attractionsCarousel").bootstrapcarousel({interval:0, pause: false});
+      function onScrollservice1()
+      {
+         var $obj = $("#wb_service1");
+         if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+         {
+            $obj.addClass("in-viewport");
+            AnimateCss('wb_service1', 'transform-scale-in', 100, 2000);
+         }
+         else
+         if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+         {
+            $obj.removeClass("in-viewport");
+            AnimateCss('wb_service1', 'animate-fade-out', 0, 0);
+         }
+      }
+      if (!$('#wb_service1').inViewPort(true))
+      {
+         $('#wb_service1').addClass("in-viewport");
+      }
+      onScrollservice1();
+      $(window).scroll(function(event)
+      {
+         onScrollservice1();
+      });
+      function onScrollservice2()
+      {
+         var $obj = $("#wb_service2");
+         if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+         {
+            $obj.addClass("in-viewport");
+            AnimateCss('wb_service2', 'transform-scale-in', 100, 2000);
+         }
+         else
+         if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+         {
+            $obj.removeClass("in-viewport");
+            AnimateCss('wb_service2', 'animate-fade-out', 0, 0);
+         }
+      }
+      if (!$('#wb_service2').inViewPort(true))
+      {
+         $('#wb_service2').addClass("in-viewport");
+      }
+      onScrollservice2();
+      $(window).scroll(function(event)
+      {
+         onScrollservice2();
+      });
+      function onScrollservice3()
+      {
+         var $obj = $("#wb_service3");
+         if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+         {
+            $obj.addClass("in-viewport");
+            AnimateCss('wb_service3', 'transform-scale-in', 100, 2000);
+         }
+         else
+         if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+         {
+            $obj.removeClass("in-viewport");
+            AnimateCss('wb_service3', 'animate-fade-out', 0, 0);
+         }
+      }
+      if (!$('#wb_service3').inViewPort(true))
+      {
+         $('#wb_service3').addClass("in-viewport");
+      }
+      onScrollservice3();
+      $(window).scroll(function(event)
+      {
+         onScrollservice3();
+      });
+      $("#headerPanelMenu").panel({animate: true, animationDuration: 200, animationEasing: 'linear', dismissible: true, display: 'overlay', position: 'left', toggle: true});
+      $("#headerPanelMenu_markup ul li a").click(function(event)
+      {
+          $.panel.hide($("#headerPanelMenu_panel"));
+      });
+   });
+</script>
+</head>
+<body>
+   <div id="wb_header">
+      <div id="header">
+         <div class="row">
+            <div class="col-1">
+               <div id="wb_searchOpen">
+                  <a href="#" onclick="ShowObjectWithEffect('searchInput', 1, 'slideright', 500);ShowObjectWithEffect('wb_searchClose', 1, 'fade', 1);ShowObjectWithEffect('wb_searchOpen', 0, 'fade', 1);return false;"><div id="searchOpen"><i class="fa fa-search"></i></div></a>
+               </div>
+               <div id="wb_searchClose">
+                  <a href="#" onclick="ShowObjectWithEffect('searchInput', 0, 'slideright', 500);ShowObjectWithEffect('wb_searchClose', 0, 'fade', 1);ShowObjectWithEffect('wb_searchOpen', 1, 'fade', 1);return false;"><div id="searchClose"><i class="fa fa-times"></i></div></a>
+               </div>
+               <input type="text" id="searchInput" name="إبحث" value="" spellcheck="false" placeholder="&#1573;&#1576;&#1581;&#1579;">
+            </div>
+            <div class="col-2">
+               <div id="wb_headerBreadcrumb">
+                  <ul id="headerBreadcrumb">
+                     <li><a href="#contact">.</a></li>
+                     <li><a href="#contact">&#1604;&#1604;&#1578;&#1608;&#1575;&#1589;&#1604;</a></li>
+                     <li><a href="#planTripLayoutGrid">&#1593;&#1606; &#1575;&#1604;&#1588;&#1585;&#1603;&#1577;</a></li>
+                     <li><a href="#services">&#1582;&#1583;&#1605;&#1575;&#1578;&#1606;&#1575;</a></li>
+                     <li><a href="#header">&#1575;&#1604;&#1585;&#1574;&#1610;&#1587;&#1610;&#1577;</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-3">
+               <div id="wb_headerPanelMenu">
+                  <a href="#headerPanelMenu_markup" id="headerPanelMenu">
+                     <span class="line"></span>
+                     <span class="line"></span>
+                     <span class="line"></span>
+                  </a>
+                  <div id="headerPanelMenu_markup">
+                     <ul role="menu">
+                        <li role="menuitem"><a href="#contact" class="nav-link">&#1604;&#1604;&#1578;&#1608;&#1575;&#1589;&#1604;</a></li>
+                        <li role="menuitem"><a href="#planTrip" class="nav-link">&#1593;&#1606; &#1575;&#1604;&#1588;&#1585;&#1603;&#1577;</a></li>
+                        <li role="menuitem"><a href="#services" class="nav-link">&#1582;&#1583;&#1605;&#1575;&#1578;&#1606;&#1575;</a></li>
+                        <li role="menuitem"><a href="#header" class="nav-link">&#1575;&#1604;&#1585;&#1574;&#1610;&#1587;&#1610;&#1577;</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_LayoutGrid2">
+      <div id="LayoutGrid2">
+         <div class="row">
+            <div class="col-1">
+               <div id="wb_Text1">
+                  <span style="color:#E6711D;font-family:Cairo;font-size:19px;"><strong>شركة رؤية لنقل العفش</strong></span>
+               </div>
+               <div id="wb_Text2">
+                  <span style="color:#FFFFFF;font-family:Cairo;font-size:16px;">إتصل على 01002425745 - 01210300704</span>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_LayoutGrid1">
+      <div id="LayoutGrid1">
+         <div class="row">
+            <div class="col-1">
+               <ul id="SlideShow1">
+                  <li><img class="image" src="images/106808770_1518167638388314_6063424586359410736_n.jpg" alt="" title=""></li>
+                  <li><img class="image" src="images/110334084_1692802980868211_880585914205390208_n.jpg" style="display:none;" alt="" title=""></li>
+                  <li><img class="image" src="images/119216252_1745091905639318_5231920126870389088_n.jpg" style="display:none;" alt="" title=""></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_CardContainer5">
+      <div id="CardContainer5-overlay"></div>
+      <div id="CardContainer5">
+         <div id="wb_Card12">
+            <div id="Card12-card-body">
+               <div id="Card12-card-item0"><i class="fa fa-check-circle"></i></div>
+               <div id="Card12-card-item1">سيارات نقل مغلقة للحفاظ على العفش</div>
+               <div id="Card12-card-item2">تري شركة رؤية ان خدمات نقل الأثاث لها أهمية كبيرة عند كل مواطن مصري لانها توفر الكثير من الراحة والامان , وتجعله يشعر بالطمأنينة ؛ لانها توفر عليه الكثير من الجهد والعناء المبذول في عمليات النقل ,</div>
+               <hr id="Card12-card-item3">
+            </div>
+         </div>
+         <div id="wb_Card13">
+            <div id="Card13-card-body">
+               <div id="Card13-card-item0"><i class="fa fa-phone-square"></i></div>
+               <div id="Card13-card-item1">نجاريين لفك وتركيب العفش بأمان</div>
+               <div id="Card13-card-item2">تحرص شركتنا علي تقديم خدمة نقل موبيليا كاملة متكاملة لتوفير الراحة والأمان لكل عملائها الكرام و لتحقق رضاهم عن الخدمة التي تقدمها الشركة هو الهدف الحقيقي الذي تسعي اليه الشركة</div>
+               <hr id="Card13-card-item3">
+            </div>
+         </div>
+         <div id="wb_Card14">
+            <div id="Card14-card-body">
+               <div id="Card14-card-item0"><i class="fa fa-suitcase"></i></div>
+               <div id="Card14-card-item1">تغليف شامل للعفش للحفاظ عليه </div>
+               <div id="Card14-card-item2">شركةرؤية لنقل الاثاث تقدم لكل عملائها خطوات النقل في أسرع وقت ومجموعة من النصائح التي يجب ان نراعيها للتخلص من فوبيا نقل الاثاث و تتم عملية النقل في أمان دون ان تتعرض اي قطعة لأي خدش او كسر حتى و ان كان…</div>
+               <hr id="Card14-card-item3">
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_planTrip">
+      <div id="planTrip">
+         <div class="row">
+            <div class="col-1">
+               <div id="wb_planTripHeading">
+                  <h2 id="planTripHeading">مميزات شركتنا</h2>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_services">
+      <div id="services-overlay"></div>
+      <div id="services">
+         <div class="row">
+            <div class="col-1">
+               <div id="wb_service1">
+                  <span style="color:#E6711D;font-family:Cairo;font-size:19px;line-height:36px;"><strong>مابعد التوصيل</strong></span><span style="color:#E6711D;font-family:Cairo;font-size:13px;line-height:24px;"><br></span><span style="color:#FFFFFF;font-family:Cairo;font-size:13px;line-height:24px;"><br>بمجرد الانتقال الي البيت الجديد نقوم بتركيب قطع الأثاث الكبيرة, و ترتيبها , كذلك يتم فرز الكراتين و الحقائب و توزيعها علي الاماكن المخصصة لها .<br></span>
+               </div>
+            </div>
+            <div class="col-2">
+               <div id="wb_service2">
+                  <span style="color:#E6711D;font-family:Cairo;font-size:19px;line-height:36px;"><strong>النقل داخل وخارج القاهرة</strong></span><span style="color:#E6711D;font-family:Cairo;font-size:16px;line-height:36px;"><strong><br></strong></span><span style="color:#E6711D;font-family:Cairo;font-size:13px;line-height:24px;"><br></span><span style="color:#FFFFFF;font-family:Cairo;font-size:13px;line-height:24px;"> فشركة رؤية من الشركات القليلة جدا المعتمدة في مصر و التي تقدم خدمات نقل الاثاث داخل و خارج القاهرة<br></span>
+               </div>
+            </div>
+            <div class="col-3">
+               <div id="wb_service3">
+                  <span style="color:#E6711D;font-family:Cairo;font-size:19px;line-height:36px;"><strong>ونش هيدروليكى للأدوار المرتفعة<br></strong></span><span style="color:#E6711D;font-family:Cairo;font-size:13px;line-height:24px;"><br></span><span style="color:#FFFFFF;font-family:Cairo;font-size:13px;line-height:24px;">نستخدم اوناش هيدروليكية مخصصة لرفع وتنزيل العفش من الأدوار العالية أو فى حالة السلالم الضيقة </span>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_planTripLayoutGrid">
+      <div id="planTripLayoutGrid">
+         <div id="wb_planTripCard3">
+            <div id="planTripCard3-card-body">
+               <div id="planTripCard3-card-item0"><i class="fa fa-money"></i></div>
+               <div id="planTripCard3-card-item1">نقل العفش بأقل سعر</div>
+               <div id="planTripCard3-card-item2">تتميز شركتنا بقدرتها على نقل العفش بأقل تكلفة وذلك لأعتمادنا على معدات الشركة المملوكة لها مما يخفض سعر التكلفة على العميل</div>
+            </div>
+         </div>
+         <div id="wb_planTripCard2">
+            <div id="planTripCard2-card-body">
+               <div id="planTripCard2-card-item0"><a href="./index.html"><i class="fa fa-users"></i></a></div>
+               <div id="planTripCard2-card-item1">عمالة مخصصة لنقل العفش بحرص شديد</div>
+               <div id="planTripCard2-card-item2">تعتمد شركتنا على العمالة المهنية والمخصصة للتعامل مع العفش ونقله بحرص وعناية كبيرة</div>
+            </div>
+         </div>
+         <div id="wb_planTripCard1">
+            <div id="planTripCard1-card-body">
+               <div id="planTripCard1-card-item0"><i class="fa fa-clock-o"></i></div>
+               <div id="planTripCard1-card-item1">التزام بالمواعيد مع العميل</div>
+               <div id="planTripCard1-card-item2">من اهم سمات شركتنا هو الالتزام  ودقة المواعيد مع العميل وذلك حرصا على وقت العميل</div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_banner">
+      <div id="banner-overlay"></div>
+      <div id="banner">
+         <div class="row">
+            <div class="col-1">
+               <div id="wb_bannerHeading1">
+                  <h2 id="bannerHeading1">عمالة مخصصة للتعامل مع الأثاث بعناية </h2>
+               </div>
+               <div id="wb_bannerHeading2">
+                  <h3 id="bannerHeading2">نعمل على مدار الاسبوع والعطلات الرسمية </h3>
+               </div>
+               <a id="bannerButton" href="tel:01002425745">خدمة 24 ساعة</a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_attractions">
+      <div id="attractions">
+         <div class="row">
+            <div class="col-1">
+               <div class="col-1-padding">
+                  <div id="wb_attractionsCarousel">
+                     <div id="attractionsCarousel" class="carousel slide">
+                        <ol class="carousel-indicators">
+                           <li data-target="#attractionsCarousel" data-slide-to="0" class="active"></li>
+                           <li data-target="#attractionsCarousel" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                           <div class="carousel-item frame-1 active">
+                              <div class="carousel-innerframe">
+                              </div>
+                           </div>
+                           <div class="carousel-item frame-2">
+                              <div class="carousel-innerframe">
+                              </div>
+                           </div>
+                        </div>
+                        <a class="carousel-item-left carousel-control" href="#attractionsCarousel" role="button" data-slide="prev">
+                           <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-item-right carousel-control" href="#attractionsCarousel" role="button" data-slide="next">
+                           <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-2">
+               <div class="col-2-padding">
+                  <div id="wb_attractionsText1">
+                     <span style="color:#6D6D6D;font-family:'Cairo';font-weight:900;font-size:16px;line-height:30px;">شركة رؤية هي احدي أفضل الشركات الرائدة في مجال نقل العفش بجميع أنحاء الجمهورية , يمكنك معها نقل عفش منزلك , شركتك , مكتبك بأمان تام دون أن يحدث له أي ضرر او تلف .</span>
+                  </div>
+                  <a id="attractionsButton" href="tel:01002425745">اتصل اليوم وإحجز ميعاد</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_contact">
+      <div id="contact">
+         <div class="row">
+            <div class="col-1">
+               <div id="wb_contactHeading">
+                  <h2 id="contactHeading">تواصل معنا فى أى وقت</h2>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_contactForm">
+      <div id="contactForm-divider-top">
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+            <path class="divider-fill" d="m 500,40.86 c 0,0 22.91,59.14 144.4,59.14 H 1000 V 0 H 0 V 100 H 355.6 C 477.09,100 500,40.86 500,40.86 Z"/>
+         </svg></div>
+      <div id="contactForm">
+         <div class="row">
+            <div class="col-1">
+               <div class="col-1-padding">
+                  <div id="wb_contactText1">
+                     <p style="font-size:13px;line-height:25px;color:#4F4F4F;"><span style="font-size:27px;line-height:49.5px;font-weight:bold;">عن شركتنا</span></p>
+                  </div>
+                  <div id="wb_contactText2">
+                     <p style="font-size:13px;line-height:25px;color:#6D6D6D;">شركة رؤية لديها خبرة كافية في مجال النقل , بالاضافة الي انها تمتلك جميع الامكانيات والمعدات والأدوات والطاقة البشرية التي مكنتها من تقديم خدمة نقل عفش مميزة علي أعلي مستوي مستوي يليق عملائها.</p>
+                     <p style="font-size:13px;line-height:25px;">&nbsp;</p>
+                     <p style="font-size:13px;line-height:25px;color:#6D6D6D;">تتمثل تلك الامكانيات في أحدث وأفضل أجهزة النقل,&nbsp; وأفضل الادوات التي تستخدم في نقل العفش من عدد وأدوات يدوية لحمل الاثاث مثل أشرطة الكتف , وأحدث أدوات فك وتركيب الاثاث, كذلك أجهزة مخصصة لحمل العفش مثل الاوناش الهيدروليكية والاوناش الكهربية و متسلق السلالم الكهربائي , وكذلك أحدث سيارات نقل الاثاث المغلقة منها والمفتوح حتي تقدم الشركة في النهاية خددمة نقل أثاث لا يعلي عليها.</p>
+                     <p style="font-family:Arial;font-size:15px;line-height:16.5px;">&nbsp;</p>
+                  </div>
+                  <a id="contactButton" href="tel:01002425745">تواصل معنا</a>
+               </div>
+            </div>
+            <div class="col-2">
+               <div class="col-2-padding">
+                  <div id="wb_contactText3">
+                     <p style="font-size:27px;line-height:49.5px;color:#4F4F4F;"><span style="font-weight:bold;">تواصل معنا</span></p>
+                     <p style="font-family:Arial;font-size:13px;line-height:16px;">&nbsp;</p>
+                     <p style="font-family:Arial;font-size:16px;line-height:18px;font-weight:bold;color:#4F4F4F;">01002425745</p>
+                     <p style="font-family:Arial;font-size:13px;line-height:16px;">&nbsp;</p>
+                     <p style="font-family:Arial;font-size:16px;line-height:18px;font-weight:bold;color:#4F4F4F;">01210300704</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_footer">
+      <div id="footer">
+         <div class="row">
+            <div class="col-1">
+            </div>
+            <div class="col-2">
+               <div id="wb_footerText">
+                  <p style="font-size:12px;line-height:22.5px;color:#FFFFFF;"><span style="background-color:#1F5F61;">جميع الحقوق محفوظة لشركة رؤية لنقل العفش</span><span style="background-color:#1F5F61;"> © </span><span style="background-color:#1F5F61;">2021</span></p>
+               </div>
+            </div>
+            <div class="col-3">
+               <div id="wb_footerIcon1">
+                  <a href="./index.html" target="_blank"><div id="footerIcon1"><i class="fa fa-facebook-square"></i></div></a>
+               </div>
+               <div id="wb_footerIcon2">
+                  <a href="./index.html" target="_blank"><div id="footerIcon2"><i class="fa fa-instagram"></i></div></a>
+               </div>
+               <div id="wb_footerIcon3">
+                  <a href="./index.html" target="_blank"><div id="footerIcon3"><i class="fa fa-snapchat-ghost"></i></div></a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="Layer1">
+      <div id="wb_Image1">
+         <a href="tel:01002425745"><img src="images/cell.png" id="Image1" alt=""></a></div>
+   </div>
+</body>
+</html>
